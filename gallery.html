@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/gallery.css" />
+    <title>Tanaka Guitar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Tanaka Guitar</div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./member.html">Member</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+        </div>
+      </ul>
+    </nav>
+    
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">Tanaka Gallery</h1>
+        <p>The best guitars are here</p>
+      </div>
+    </div>
+
+    <div class="form-wrapper">
+      <div class="flex-2">
+        <span>Filter by category: </span>
+      </div>
+      <div class="flex-8">
+        <form id="form-catagory">
+          <select name="catagory" id="catagory" onchange="selectCategory()">
+            <option value="All">All</option>
+            <option value="Electric Guitar">Electric Guitar</option>
+            <option value="Accoustic Guitar">Accoustic Guitar</option>
+            <option value="Nylon String">Nylon String</option>
+            <option value="Classic Guitar">Classic Guitar</option>
+          </select>
+        </form>
+      </div>
+    </div>
+    <div class="grid" id="grid">
+
+    </div>
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Tanaka Guitar is one of the musical instrument industry’s largest and most recognised guitar brands.</p>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Products</div>
+          <div><a href="#">Accoustic Guitar</a></div>
+          <div><a href="#">Electric Guitar</a></div>
+          <div><a href="#">Classic Guitar</a></div>
+          <div><a href="#">Nylon Guitar</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>021-123456</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>tanakaguitar@gmail.com</a>
+            </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2022 TG All rights reserved</p>
+      </div>
+    </footer>
+
+    <script src="./scripts/gallery.js"></script>
+  </body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/member.css" />
+    <title>Tanaka Guitar</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Tanaka Guitar</div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./gallery.html">Gallery</a></li>
+          <li><a href="./about-us.html">About Us</a></li>
+          <li><a href="./member.html">Member</a></li>
+          <li><a href="./contact-us.html">Contact Us</a></li>
+        </div>
+      </ul>
+    </nav>
+    <div class="hero-image">
+      <div class="hero-text">
+        <h1 style="font-size: 50px">Tanaka Member</h1>
+        <p>Tanaka has membership program</p>
+      </div>
+    </div>
+
+    <section id="contact">
+      <div class="contact-box">
+        <div class="contact-links">
+          <h2>membership Program</h2>
+          <h3>
+            Become a member and get special offers from us and you'll get
+            special discount too
+          </h3>
+        </div>
+        <div class="contact-form-wrapper">
+          <form name="member" onsubmit="return validateForm()">
+            <div class="form-item">
+              <input type="text" name="fullname" />
+              <label class="inner-label">Full Name:</label>
+            </div>
+            <div class="form-item">
+              <select name="gender">
+                <option class="" value="" disabled selected>
+                  Select Gender
+                </option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+              </select>
+              <label class="inner-label">Gender:</label>
+            </div>
+            <div class="form-item">
+              <input type="text" name="email" />
+              <label class="inner-label">Email:</label>
+            </div>
+            <div class="form-item">
+              <textarea class="" name="address"></textarea>
+              <label class="inner-label">Address:</label>
+            </div>
+            <div class="form-item">
+              <div class="container-check">
+                <input id="accept" type="checkbox" name="accept" />
+                <span>I agree for privacy and policy</span>
+              </div>
+            </div>
+            <button type="submit" class="submit-btn">Confirm</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+
+    <footer>
+      <div class="content">
+        <div class="left box">
+          <div class="upper">
+            <div class="topic">About us</div>
+            <p>Tanaka Guitar is one of the musical instrument industry’s largest and most recognised guitar brands.</p>
+          </div>
+        </div>
+        <div class="middle box">
+          <div class="topic">Our Products</div>
+          <div><a href="#">Accoustic Guitar</a></div>
+          <div><a href="#">Electric Guitar</a></div>
+          <div><a href="#">Classic Guitar</a></div>
+          <div><a href="#">Nylon Guitar</a></div>
+        </div>
+        <div class="right box">
+          <div class="topic">Contact us</div>
+            <div class="phone">
+              <a href="#"><i class="fas fa-phone-volume"></i>021-123456</a>
+            </div>
+            <div class="email">
+              <a href="#"><i class="fas fa-envelope"></i>tanakaguitar@gmail.com</a>
+            </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <p>Copyright © 2022 TG All rights reserved</p>
+      </div>
+    </footer>
+
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
